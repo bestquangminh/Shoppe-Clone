@@ -1,0 +1,873 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <title>Shoppe Việt Nam</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-tablet-mobile">  
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--hasQRCODE header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng Quang Minh
+                            <!-- CREATE QR CODE -->
+                            <div class="header__qrcode">
+                                <img src="./assets/img/QRCode.png" alt="QR CODE" class="header__qrcode-img">
+                                <div class="header__qrcode-apps">
+                                    <img src="./assets/img/google_play.png" alt="google_play" class="header__qrcodes-apps-img">
+                                    <img src="./assets/img/app_store.png" alt="app_store" class="header__qrcodes-apps-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item--NoPointer">Kết nối</span>
+                            <a href="" class="header__navbar-link m">
+                                <i class="header__navbar-logo fa-brands fa-facebook"></i> 
+                            </a>
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-logo fa-brands fa-instagram"></i>             
+
+                            </a>
+                        </li>
+                    </ul>    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--noti">
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-logo fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <!-- CREATE NOTIFICATION -->
+                            <div class="header__noti">
+                                <header class="header__noti-title">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__noti-list">
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="https://abphotos.link/photos/resized/200x120/83-1627146178-myphamohui-lgvina.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-text">
+                                                <p class="header__noti-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui và các sản phẩm khác</p>
+                                                <p class="header__noti-descrip">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/ma-giam-gia-shopee.jpg" alt="" class="header__noti-img">
+                                            <div class="header__noti-text">
+                                                <p class="header__noti-name">GIẢM TRỌN ĐƠN 20K</p>
+                                                <p class="header__noti-descrip">Áp dụng cho đơn từ 0đ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="./assets/img/shopee-1-8041.png" alt="" class="header__noti-img">
+                                            <div class="header__noti-text">
+                                                <p class="header__noti-name">SHOPPE FOOD ƯU ĐÃI 50% !</p>
+                                                <p class="header__noti-descrip">Áp dụng cho đơn từ 0đ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__noti-footer">
+                                    <a href="">
+                                        <span>Xem tất cả</span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-logo fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--bold">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user ">
+                            <img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t39.30808-6/279815677_3263673250567230_3877121449766689214_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6Lqiw3_Evj4AX8uS67-&_nc_oc=AQnTycY4Fu-70NxDjSb1GsXIYPweECTwOmONsBbN4TArbr10SO_1w56wp160BxTi6UpUOEaMSJOrvw8TZkyUXjeB&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT-rbwcPtnwrUxlNFaPrfTWq016VoMtcLD57Y7TQzgr3Cw&oe=630411DE" alt="" class="header__navbar-user-ava">
+                            <span class="header__navbar-user-name">Mink Peo</span>
+
+                            <ul class="header__user-menu">
+                                <li class="header__user-menu-items"><a class="border-radius-top-leftright-2px" href="">Tài khoản của tôi</a></li>
+                                <li class="header__user-menu-items"><a href="">Đơn mua</a></li>
+                                <li class="header__user-menu-items"><a class="border-radius-bottom-leftright-2px" href="">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>         
+                </nav>
+                <div class="header-searhbar">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                       <a href="/"> <img class="header__logo-img" src="http://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png" alt=""></a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox">
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiến sản phẩm">
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm    
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-items"><a href="">Áo thun co dãn</a></li>
+                                    <li class="header__search-history-items"><a href="">Bàn phím cơ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-item header__seach-item-icon--active"><span>Trong shop</span>
+                                   <i class="header__seach-item-icon fa-solid fa-check"></i> 
+                                </li>
+                                <li class="header__search-item"><span>Ngoài shop</span>
+                                   <i class="header__seach-item-icon fa-solid fa-check"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header__shoppingcart">
+                        <div class="header__shoppingcart-wrap">
+                            <i class="header__shoppingcart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__shoppingcart-numbers">3</span>                           
+                            <div class="header__shoppinglist"> <!-- NO CART: header__shoppinglist--no-cart -->
+                                <img src="https://xn--s1-j9s.vn/assets/images/no-cart.png" alt="" class="header__shoppinglist-img">
+                                <p class="header__shoppinglist-text">Chưa Có Sản Phẩm</p>
+                                <h3 class="header__shoppinglist-heading">
+                                    Sản phẩm đã thêm
+                                </h3>
+                                <ul class="header__cart-list">
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items"><img src="https://cf.shopee.vn/file/ea0445218d771e937201b99bb2f802f6_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h3 class="header__cart-item-name">Quần âu nam ống rộng,quần tây baggy nam cạp cao Qthouse</h3>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">₫155.000</span>
+                                                    <span class="header__cart-item-multiple">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-description">Phân Loại: Quần Áo</div>
+                                                <a href="" class="header__cart-item-deletbtn">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                <button class="header__cart-viewcart btn btn--primary">Xem Giỏ Hàng</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a></li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link header__sort-link--active">Bán chạy</a></li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a></li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                    <i class="fa-solid fa-arrow-down-arrow-up"></i>
+                </li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row app__content ">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">                           
+                            <h3 class="category__heading">
+                                <i class="category__icon fa-solid fa-list"></i>    
+                                Danh Mục
+                            </h3>
+                            <ul class="category__list">
+                                <li class="category__items"><a href="" class="category__link category__items--active ">Bàn phím cơ</a></li>
+                                <li class="category__items"><a href="" class="category__link">Đang giảm giá</a></li>
+                                <li class="category__items"><a href="" class="category__link">Chuột gaming</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-10">
+                        <div class="filter hide-on-tablet-mobile ">
+                            <span class="filter__text">Sắp xếp theo</span>
+                            <button class="filter__btn btn">Phổ biến</button>
+                            <button class="filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="filter__btn btn">Bán chạy</button>
+                            <div class="filter__select">
+                                <span class="filter__select-text">Giá</span>
+                                <i class="filter__select-icon fa-solid fa-angle-down"></i>
+                                <ul class="filter__select-list">
+                                    <li class="filter__select-items"><a href="" class="filter__select-link">Giá: Thấp đến Cao</a></li>
+                                    <li class="filter__select-items"><a href="" class="filter__select-link">Giá: Cao đến Thấp</a></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="filter__page">
+                                <div class="filter__page-numbers">
+                                    <span class="filter__page-current">1</span>/14
+                                </div>
+                                <div class="filter__page-control">
+                                    <a href="" class="filter__page-btn filter__page-btn--disabled">
+                                        <i class="filter__page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="filter__page-btn">
+                                        <i class="filter__page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="app__product">
+                            <div class="row">
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-3 c-6">
+                                    <a class="app__product-items" href="#">
+                                        <div class="app__product-img" style="background-image: url(https://cf.shopee.vn/file/be7ae5b2e50c6aaa4e3eec0c75fa3c0f_tn);"></div>
+                                        <h4 class="app__product-name">[PASTEL] Dây cáp custom handmade Type-C cho bàn phím cơ / Coiled Custom cable type-C for mechanical keyboard</h4>
+                                        <div class="app__product-price">
+                                            <div class="app__product-price-old">1.200.00đ</div>
+                                            <div class="app__product-price-current">999.000đ</div>
+                                        </div>
+                                        <div class="app__product-item-action">
+                                            <span class="app__product-item-like app__product-item-like--liked">
+                                                <i class="app__product-item-like-icon--empty fa-regular fa-heart"></i>
+                                                <i class="app__product-item-like-icon--fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="app__product-item-rating">
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                                <i class="app__product-item-rating-icon fa-solid fa-star"></i>
+                                            </div>  
+                                            <span class="app__product-item-sold">7 Đã bán</span>                                         
+                                        </div>
+                                        <div class="app__product-item-origin">
+                                            <span class="app__product-item-origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="app__product-item-favorite">
+                                            <i class="app__product-item-favorite-checkicon fa-solid fa-check"></i>
+                                            <span>Yêu Thích</span>
+                                        </div>
+                                        <div class="app__product-item-saleoff">
+                                            <span class="app__product-item-percent">25%</span>
+                                            <span class="app__product-item-saleoff-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination app__product-pagination">
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="pagination__item-icon fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item pagination__item-link--active">
+                                <a href="" class="pagination__item-link ">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">14</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="pagination__item-icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="l-2-4 m-4 c-6">
+                       <h3 h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                       <ul class="footer__list">
+                        <li class="footer__list-items">
+                            <a href="" class="footer__items-link">Trung Tâm Trợ Giúp</a>
+                        </li>
+                        <li class="footer__list-items">
+                            <a href="" class="footer__items-link">QM-Shop Mall</a>
+                        </li>
+                        <li class="footer__list-items">
+                            <a href="" class="footer__items-link">Hướng dẫn mua hàng</a>
+                        </li>
+                       </ul>
+                    </div>
+                    <div class="l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-items"><a href="" class="footer__items-link">Giới thiệu</a></li>
+                            <li class="footer__list-items"><a href="" class="footer__items-link">Tuyển dụng</a></li>
+                            <li class="footer__list-items"><a href="" class="footer__items-link">Điều khoản</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <ul class="footer__list">
+                                <li class="footer__list-items"><a href="" class="footer__items-link">Quần áo</a></li>
+                                <li class="footer__list-items"><a href="" class="footer__items-link">Gaming gear</a></li>
+                                <li class="footer__list-items"><a href="" class="footer__items-link">Giày</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-items"><a href="" class="footer__items-link"><i class="footer__items-icon fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li class="footer__list-items"><a href="" class="footer__items-link"><i class="footer__items-icon fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li class="footer__list-items"><a href="" class="footer__items-link"><i class="footer__items-icon fa-brands fa-linkedin"></i>Linkedin</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/QRCode.png" alt="" class="footer__download-qrcode">
+                            <div class="footer__download-app">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/google_play.png" alt="" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/app_store.png" alt="" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="footer__bottom">
+                <div class="gird wide">
+                    <p class="footer__copyright">© 2022- Bản quyền thuộc về Công ty QM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">   
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__title">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>                           
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>     
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>     
+                        </div>
+                        <div class="auth-form__description">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý về
+                                <a href="" class="auth__form-policy-link">Điều khoản và dịch vụ</a> & 
+                                <a href="" class="auth__form-policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn-colorgrey auth-form__controls-mr8px">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__social">
+                        <a href="" class="auth-form__social--facebook btn btn--has-icon">
+                            <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                            <span>Kết nối với facebook</span>
+                        </a>
+                        <a href="" class="auth-form__social--google btn btn--has-icon">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span>Kết nối với google</span>
+                        </a>
+                    </div>
+                </div> -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__title">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email/Số Điện Thoại/Tên Đăng Nhập">
+                            </div>                           
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>         
+                        </div>
+                        <div class="auth-form__description">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-btn auth-form__help-btn--primary">Quên mật khẩu</a>
+                                <span class="auth-form__seperate"></span>
+                                <a href="" class="auth-form__help-btn auth-form__help-btn--textcolor">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn-colorgrey auth-form__controls-mr8px">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__social">
+                        <a href="" class="auth-form__social--facebook btn btn--has-icon">
+                            <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                            <span>Kết nối với facebook</span>
+                        </a>
+                        <a href="" class="auth-form__social--google btn btn--has-icon">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span>Kết nối với google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
